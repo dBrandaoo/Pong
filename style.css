@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    font-family: "Pixelify Sans", sans-serif;
+    color: white;
+}
+
+#game-wrapper {
+    display: none;
+}
+
+#scoreboard {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0.5em;
+}
+
+#game-field {
+    position: relative;
+    border: 6px solid white;
+    width: 650px;
+    height: 650px;
+}
+
+#half-line {
+    position: absolute;
+    height: 100%;
+    width: 0;
+    border: 5px dashed white;
+    left: 50%;
+}
+
+#ball {
+    position: absolute;
+    top: 310px;
+    left: 310px;
+    height: 30px;
+    width: 30px;
+    background-color: white;
+}
+
+#player-one, #player-two {
+    position: absolute;
+    height: 150px;
+    width: 30px;
+    background-color: white;
+}
+
+#player-one {
+    top: 250px;
+    left: 20px;
+}
+
+#player-two {
+    top: 250px;
+    right: 20px;
+}
+
+
+/* PRE GAME */
+
+#title-sc {
+    text-align: center;
+}
+
+#naming-screen {
+    width: 650px;
+    height: 500px;
+    border: 5px solid white;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#naming-screen > span {
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+    font-size: 25px;
+}
+
+#naming-screen > span:hover {
+    font-size: 30px;
+    cursor: pointer;
+    transition-duration: 0.15s;
+}
+
+.name-inp {
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 30px;
+}
+
+input {
+    width: 60%;
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 0.75em;
+}
+
+#end-screen {
+    width: 650px;
+    height: 650px;
+    border: 5px solid white;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#end-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 3em;
+}
+
+#restart-btn {
+    font-size: 2em;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#restart-btn:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    transition: .25s;
+}

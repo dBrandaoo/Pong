@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pong - Diogo Brandão</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="player-creator-wrapper">
+        <h1 id="title-sc">WELCOME TO PONG</h1>
+        <div id="naming-screen">
+            <div>
+                <div class="name-inp">
+                    <label for="p1name">Player One</label>
+                    <input type="text" name="p1name" id="p1name">
+                </div>
+                <div class="name-inp">
+                    <label for="p2name">Player Two</label>
+                    <input type="text" name="p2name" id="p2name">
+                </div>     
+            </div>
+            <span onclick="startGame()">CONTINUE</span>
+        </div>
+    </div>
+    <div id="game-wrapper">
+        <div id="scoreboard">
+            <h1 id="p1">Player One - 0</h1>
+            <h1>VS.</h1>
+            <h1 id="p2">Player Two - 0</h1>
+        </div>
+        <div id="game-field">
+            <div id="player-one"></div>
+            <div id="player-two"></div>
+            <div id="half-line"></div>
+            <div id="ball"></div>
+        </div>
+    </div>
+    <div id="end-screen">
+        <div id="end-text">
+            <span><strong>GAME OVER</strong></span>
+            <span id="winner-text">PLAYER WINS!</span>
+        </div>
+        
+        <span id="restart-btn" onclick="window.location.reload()">PLAY AGAIN</span>
+    </div>
+</body>
+</html>
